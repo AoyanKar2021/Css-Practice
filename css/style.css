@@ -6,7 +6,7 @@ section.practice-container {
 }
 .div-section {
     width: 66%;
-    height: 400px;
+    height: auto;
     background: #f1cece;
     border: 24px solid #c77f7f;
     margin: auto;
@@ -102,4 +102,29 @@ section.practice-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* =================== Display=================== */
+.list-section {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    background: red;
+}
+.block-lever{
+    width: 55%;
+    float: left;
+    padding: 10px;
+    height: auto;
+    background-color: #c77f7f;
+}
+.inline-level{
+    float: right;
+    width: 40%;
+    padding: 10px;
+    height: auto;
+    background-color: #c77f7f;
 }
