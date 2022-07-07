@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Practice</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .vertical {
+      }
+      .vertical ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        background-color: #f1f1f1;
+        height: 100%; /* Full height */
+        position: fixed;
+        overflow: auto;
+      }
+      .vertical ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+      }
+      .vertical ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        display: block;
+        padding: 10px 56px;
+      }
+      .active2 {
+        background-color: #04aa6d;
+      }
+      .vertical ul li a:hover:not(.active2) {
+        background-color: rgb(218, 146, 51);
+      }
+      header {
+      }
+      .vertical-nav {
+        float: left;
+        width: 20%;
+      }
+      .horizontalnav {
+        float: left;
+
+        width: 80%;
+      }
+      .vertical-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+      .vertical-nav ul li {
+        display: block;
+        width: 100%;
+      }
+      .vertical-nav ul li a {
+        text-align: center;
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      .vertical-nav ul li a:hover:not(.active) {
+        background-color: rgb(188, 150, 101);
+        transition: all 0.7s;
+      }
+      .horizontalnav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        background-color: bisque;
+      }
+      .horizontalnav ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 24px 60px;
+        color: black;
+        font-size: 20px;
+      }
+      .vertical-nav ul li a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .horizontalnav ul li a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .horizontalnav ul li {
+        width: 200px;
+        display: block;
+        text-align: center;
+      }
+      .horizontalnav ul li a:hover:not(.active) {
+        background-color: rgb(200, 135, 56);
+      }
+      h2,
+      h3,
+      p {
+        padding: 10px 5px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <div class="vertical-nav">
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="horizontalnav">
+        <nav>
+          <ul>
+            <li><a class="active" href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
+
+    <div>
+      <section class="vertical">
+        <ul>
+          <li><a class="active2" href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Portfolio</a></li>
+        </ul>
+        <div
+          style="
+            margin-left: 20%;
+            padding: 1px 16px;
+            height: 1000px;
+            background: #f9dfdf66;
+          "
+        >
+          <h2>Fixed Full-height Side Nav</h2>
+          <h3>
+            Try to scroll this area, and see how the sidenav sticks to the page
+          </h3>
+          <p>
+            Notice that this div element has a left margin of 25%. This is
+            because the side navigation is set to 25% width. If you remove the
+            margin, the sidenav will overlay/sit on top of this div.
+          </p>
+          <p>
+            Also notice that we have set overflow:auto to sidenav. This will add
+            a scrollbar when the sidenav is too long (for example if it has over
+            50 links inside of it).
+          </p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+          <p>Some text..</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
